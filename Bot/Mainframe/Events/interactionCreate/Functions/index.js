@@ -1,0 +1,15 @@
+module.exports = {
+    SecretRoom: require('./SecretRoom'),
+    MemberPanel: require('./Member'),
+    Streamer: require('./Streamer'),
+    Punish: require('./Punish'),
+    Invasion: require('./Invasion'),
+    Menu: require('./Menu'),
+    Solver: require('./Solver'),
+    Task: require('./Task'),
+    Orientation: require('./Orientation'),
+    StreamerRoom: require('./StreamerRoom'),
+    Bots: require('./Bots'),
+    Responsibility: require('./Responsibility'),
+    Punitive: require('./Punitive'),
+}
