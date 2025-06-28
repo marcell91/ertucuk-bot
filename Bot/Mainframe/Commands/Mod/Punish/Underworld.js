@@ -1,0 +1,65 @@
+const { PermissionsBitField: { Flags } } = require('discord.js');
+const ms = require('ms');
+
+module.exports = {
+    Name: 'ban',
+    Aliases: ['underworld', 'sg', 'doom'],
+    Description: 'Sunucuda taşkınlık yaratan bir kullanıcıya underworld cezası vermenizi sağlar.',
+    Usage: 'ban <@User/ID>',
+    Category: 'Moderation',
+    Cooldown: 0,
+
+    Permissions: {
+        User: [],
+        Role: []
+    },
+
+    Command: {
+        Prefix: true,
+    },
+
+    messageRun: async (client, message, args, ertu, embed) => {
+
+        const member = message.mentions.members.first() || message.guild.members.cache.get(args[0])
+        if (!member) {
+            client.embed(message, `Kullanıcı bulunamadı!`);
+            return;
+        }
+
+        const limit = client.functions.checkLimit(
+            message.author.id,
+            'Ban',
+            ertu.settings.banLimit ? Number(ertu.settings.banLimit) : 5,
+            ms('1h'),
+        );
+
+        if (limit.hasLimit) {
+            client.embed(
+                message,
+                `Atabileceğiniz maksimum susturma limitine ulaştınız. Komutu ${limit.time} sonra tekrar deneyebilirsiniz.`,
+            );
+            return;
+        };
+
+        if (member) {
+            if (client.functions.checkUser(message, member)) return;
+            if (member.roles.cache.has(ertu.settings.underworldRole)) {
+                client.embed(message, 'Kullanıcı zaten cezalı.');
+                return;
+            }
+        };
+
+        const reason = args.splice(1).join(' ')
+        if (!reason) {
+            client.embed(message, `Lütfen bir sebep belirtin!`);
+            return;
+        }
+
+        member.punish({
+            type: 'Underworld',
+            message: message,
+            ertu: ertu,
+            reason: reason,
+        });
+    },
+};
