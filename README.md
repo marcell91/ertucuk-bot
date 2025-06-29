@@ -15,4 +15,4 @@ shen kardeşim webinde acık var sanki ha?
 ![Sehncim](https://github.com/user-attachments/assets/80732d02-76ee-4e46-9d71-3c35750ad12c)
 
 
-developed by marcel
+developed by marcel / hizmet / url.js
