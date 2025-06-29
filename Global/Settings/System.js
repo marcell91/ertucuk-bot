@@ -11,7 +11,7 @@ module.exports = {
         Status: 'dnd',
         Type: ActivityType.Playing,
         Message: [
-            'SIKTIM was here ❤️',
+            '1919 was here ❤️',
         ]
     },
 
@@ -23,19 +23,19 @@ module.exports = {
     ],
 
     Main: {
-        Mainframe: 'MTM4MjAxMzkxMjc5MDIwODU2Mw.GYoDnl.LKMszMYU',
-        Elixir: 'MTM4MjAxNDA4NDI1MzM1MjA0Ng.GcPbVc0Euh9-FU4',
-        Point: 'MTM4MjAxNDM0ODM2MDI4NjMwOQ.GVgnSJ.XjxdZM',
+        Mainframe: '',
+        Elixir: '',
+        Point: '',
         Prefix: ['.'],
     },
 
     Welcome: {
         Tokens: [
-            'MTM0Njk1NDM0zdKVbdNKy5-5UvrM',
-            'MTM0Njk1NDg5MTPoMo',
-            'MTM0Njk1NM4s',
-            'MTM0Njk1NTA0NjE1NThn9R9wi5WKc',
-            'MTM0Njk1NTExODUxOTc4MQ',
+            '',
+            '',
+            '',
+            '',
+            '',
         ],
         Channels: [
             '1338969220490465280',
