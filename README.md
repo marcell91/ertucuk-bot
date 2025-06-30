@@ -1,5 +1,5 @@
 # ertucuk-bot
-Ertu / Monarch bot karşınızda rat ile size sunulmaktadır. r/1919
+Ertu / Monarch bot karşınızda. r/1919
 
 bu bot tamamen ertunun kendi orjinal / güncel botudur, iyi kullanımlar.
 Madem tehdit Ediyorsun engelleme bari.
