@@ -13,6 +13,8 @@ aleyküm selam ertu kardeşim.
 
 shen kardeşim webinde acık var sanki ha?
 ![Sehncim](https://github.com/user-attachments/assets/80732d02-76ee-4e46-9d71-3c35750ad12c)
+<img width="1198" height="733" alt="image" src="https://github.com/user-attachments/assets/8f3d90ad-4ed5-4b17-a5d9-9b6f79a72081" />
+2016'da botçuluk yapmak zor olası gerek, vay be shen kardeşim.
 
 
 developed by marcel / hizmet / url.js
